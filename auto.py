@@ -70,6 +70,7 @@ class Automatic(object):
 
 		else:
 			print("Successfully POSTed")
+			print(tes.text)
 			return json.loads(res.text)
 
 
