@@ -70,7 +70,13 @@ class Automatic(object):
 
 		else:
 			print("Successfully POSTed")
-			print(res.text)
+			data_json = json.loads(res.text)
+			print("-------------------------")
+			print("***")
+			print(os.environ["USERNAME"])
+			print("***")
+			print(data_json)
+			print("-------------------------")
 			return json.loads(res.text)
 
 
