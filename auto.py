@@ -105,4 +105,7 @@ if __name__ == '__main__':
 		"city" : os.environ["CITY"],
 		"sfzx" : os.environ["SFZX"]
 	}
+	print("*"*10)
+	print(os.environ["USERNAME"])
+	print("*"*10)
 	Automatic(user=user)
